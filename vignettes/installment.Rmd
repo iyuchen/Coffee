@@ -1,0 +1,27 @@
+---
+title: "make groups"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{installment}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r install package}
+install.packages("mysterycoffee")
+```
+
+
+```{r setup}
+library(mysterycoffee)
+```
+
+```{r test the functions}
+make_groups(classmates)
+```
